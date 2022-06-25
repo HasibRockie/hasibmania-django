@@ -1,0 +1,118 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{% block title %} - {{post.title}} {% endblock %}  
+
+{% block styles %}
+    <link href="{% static 'css/viewpost.css' %}" />
+{% endblock %} 
+
+{% block body_block %}
+
+<div class="post-container">
+    <h3 class="post-headline">
+      {{post.title}}
+    </h3>
+    <hr />
+    <br />
+    <div class="post-info">
+      <h5>{{post.category}}</h5>
+      <h5>পোস্ট নংঃ {{post.id}} </h5>
+      <h5>{{post.date}} </h5>
+    </div>
+    <hr />
+    <br />
+    <div class="post-body">
+
+
+
+
+      <p>{{post.para1}}</p><br /> 
+      <p>{{post.para2}}</p><br /> 
+      <img src="/{{STATIC_URL}}{{post.img1}}" alt="{{post.img1caption}}" /><p class="img-caption"> {{post.img1caption}}</p> <br /> 
+
+      <p>{{post.para3}}</p><br /> 
+      <p>{{post.para4}}</p><br /> 
+
+      {% if post.img2 %}
+        <img src="/{{STATIC_URL}}{{post.img2}}" alt="{{post.img2caption}}" /><p class="img-caption"> {{post.img2caption}}</p> <br /> 
+      {% endif %}
+
+      <p>{{post.para5}}</p><br /> 
+      <p>{{post.para6}}</p><br /> 
+
+      {% if post.img3 %}
+        <img src="/{{STATIC_URL}}{{post.img3}}" alt="{{post.img3caption}}" /><p class="img-caption"> {{post.img3caption}}</p> <br /> 
+      {% endif %}
+
+      <p>{{post.para7}}</p><br /> 
+      <p>{{post.para8}}</p><br /> 
+
+      {% if post.img4 %}
+        <img src="/{{STATIC_URL}}{{post.img4}}" alt="{{post.img4caption}}" /><p class="img-caption"> {{post.img4caption}}</p> <br /> 
+      {% endif %}
+
+      <p>{{post.para9}}</p><br /> 
+      <p>{{post.para10}}</p><br /> 
+
+      {% if post.img5 %}
+        <img src="/{{STATIC_URL}}{{post.img5}}" alt="{{post.img5caption}}" /><p class="img-caption"> {{post.img5caption}}</p> <br /> 
+      {% endif %}
+
+      <p>{{post.para11}}</p><br /> 
+      <p>{{post.para12}}</p><br /> 
+
+      {% if post.img6 %}
+        <img src="/{{STATIC_URL}}{{post.img6}}" alt="{{post.img6caption}}" /><p class="img-caption"> {{post.img6caption}}</p> <br /> 
+      {% endif %} 
+
+      <p>{{post.para13}}</p><br /> 
+      <p>{{post.para14}}</p><br /> 
+
+      {% if post.img7 %}
+        <img src="/{{STATIC_URL}}{{post.img7}}" alt="{{post.img7caption}}" /><p class="img-caption"> {{post.img7caption}}</p> <br /> 
+      {% endif %}
+
+      <p>{{post.para15}}</p><br />
+      <p>{{post.para16}}</p><br /> 
+
+      {% if post.img8 %}
+        <img src="/{{STATIC_URL}}{{post.img8}}" alt="{{post.img8caption}}" /><p class="img-caption"> {{post.img8caption}}</p> <br /> 
+      {% endif %}
+
+      <p>{{post.para17}}</p><br /> 
+      <p>{{post.para18}}</p><br /> 
+
+      {% if post.img9 %}
+        <img src="/{{STATIC_URL}}{{post.img9}}" alt="{{post.img9caption}}" /><p class="img-caption"> {{post.img9caption}}</p> <br /> 
+      {% endif %}
+
+      <p>{{post.para19}}</p><br />
+      <p>{{post.para20}}</p><br /> 
+
+      {% if post.img10 %}
+        <img src="/{{STATIC_URL}}{{post.img10}}" alt="{{post.img10caption}}" /><p class="img-caption"> {{post.img10caption}}</p> <br /> 
+      {% endif %}
+
+      <p>{{post.para21}}</p><br /> 
+      <p>{{post.para22}}</p><br /> 
+      <p>{{post.para23}}</p><br /> 
+      <p>{{post.para24}}</p><br /> 
+      <p>{{post.para25}}</p><br /> 
+
+
+
+
+
+
+
+      <p>
+        <b>
+          লেখকঃ <span class="author">{{post.author}}</span>
+        </b>
+      </p>
+    </div>
+  </div>
+    
+
+{% endblock body_block %}

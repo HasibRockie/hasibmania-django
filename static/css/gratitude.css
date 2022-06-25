@@ -1,0 +1,153 @@
+.gratitude{
+    font-family: 'Baloo Da 2', cursive;
+    box-sizing: border-box;
+}
+
+.all-gratitude{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.gratitude-top{
+    padding-left: 30px;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.section-grat{
+    padding-top: 100px;
+    padding-bottom: 30px;
+    width: 95%;
+}
+
+.dedication-num{
+    font-size: 40px;
+    color: crimson;
+}
+
+.item-grat{
+    
+    border: 1px solid gray;
+    margin: 10px 25px;
+    padding: 10px;
+    text-align: left;
+    background-color: #f3f2ef;
+    border-radius: 30px;
+}
+
+.item-grat:nth-child(2n){
+    margin-right: 15px;
+    margin-left: 40vw;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.head-grat{
+    padding: 20px 50px;
+    border: 2px solid crimson;
+    background-color: rgba(220, 20, 60, 0.596);
+    color: white;
+    text-align: justify;
+}
+
+.p-top{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    margin-bottom: -100px;
+}
+
+.p-left{
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+.p-right{
+    position: relative;
+    left: 30%;
+    top: -100px;
+}
+
+.p-right img{
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+
+.p-details{
+    padding: 10px 25px;
+}
+
+.p-name{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.p-relation{
+    color: rgb(143, 143, 143);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1100px){
+
+    .section-grat{
+        padding-top: 10px;
+    }
+
+    .all-gratitude{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section-grat:nth-child(1){
+        padding-top: 100px;
+        padding-bottom: 10px;
+        width: 99%;
+    }
+
+    .item-grat:nth-child(n){
+        border: 1px solid gray;
+        margin: 10px 10px 10px 10px;
+        padding: 10px;
+        text-align: left;
+        background-color: #f3f2ef;
+        border-radius: 20px;
+    }
+
+    .head-grat{
+        padding: 10px 20px;
+        border: 2px solid crimson;
+        background-color: rgba(220, 20, 60, 0.596);
+        color: white;
+        text-align: justify;
+    }
+
+    .p-top{
+        display: grid;
+        grid-template-columns: 5fr 2fr;
+        margin-bottom: -60px;
+    }
+
+    .p-left{
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .p-right{
+        position: relative;
+        left: 0%;
+        top: -70px;
+    }
+
+    .p-right img{
+        height: 160px;
+        border-radius: 50%;
+        border: 1px solid gray;
+    }
+
+    .p-details{
+        padding: 10px 15px;
+    }
+}

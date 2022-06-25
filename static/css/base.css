@@ -1,0 +1,171 @@
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+  }
+  
+  .navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;..");
+  }
+  
+  .navbar-toggler {
+    color: rgba(255, 255, 255, 0.649);
+  }
+  
+  .navbar-collapse hr{
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-link {
+    font-size: 17px !important; 
+  }
+  
+  
+  
+  .top-links {
+    padding-right: 20px !important;
+  }
+  
+  .header {
+    padding: 5px 10%;
+  }
+  
+  .header {
+    font-family: "Baloo Da 2", cursive;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .theme {
+    color: rgb(184, 187, 221);
+  }
+  
+  /* @media only screen and (max-width: 1000px) {
+      body {
+        background-color: lightblue;
+      }
+    } */
+  
+  body {
+    margin: 0;
+    font-family: "Baloo Da 2", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+    background-color: #ccebda;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23ded6c5' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23a4a89c' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23d6d4be' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23a1a998' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23cdd1b6' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%239faa94' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23c4cfae' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%239cac90' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23bacca5' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%2399ad8b' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23b0ca9c' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%2396ae87' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+  
+  .bottom {
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+  }
+  
+  
+  .footer {
+    font-family: "Baloo Da 2", cursive;
+    font-weight: bold;
+    font-size: 17px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+    padding: 50px 10px;
+    padding-left: 10%;
+    background-color: rgba(0, 0, 0, 0.568);
+    color: rgb(255, 255, 255);
+  }
+  .image {
+    border-radius: 50%;
+    height: 150px;
+  }
+  
+  .infos {
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .info {
+    padding-left: 55px;
+  }
+  
+  .pages-footer {
+    padding-bottom: 40px;
+    padding-top: 70px;
+  }
+  
+  .segment a {
+    text-decoration: none;
+    color: rgb(250, 241, 204);
+  }
+  
+  .segment:nth-child(2) {
+    text-align: right;
+    padding-right: 30%;
+  }
+  
+  .copyright {
+    background-color: black;
+    padding: 25px;
+    font-size: 15px;
+    color: rgb(134, 244, 244);
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  
+  .copyright span {
+    color: rgb(249, 77, 47);
+    font-weight: bold;
+  }
+  
+  @media only screen and (max-width: 900px) {
+  
+      .header {
+          padding: 5px 10px;
+        }
+  
+  
+    .footer {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .image {
+      border-radius: 50%;
+      height: 100px;
+    }
+  
+    .infos {
+      padding-top: 20px;
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  
+    .info {
+      line-height: 16px;
+      padding-left: 10px;
+    }
+  
+    .pages-footer {
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
+  
+    .segment:nth-child(2) {
+      text-align: left;
+    }
+  
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  

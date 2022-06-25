@@ -1,0 +1,168 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{% block title %} - Homepage {% endblock %} 
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/homepage.css' %}" />
+{% endblock %} 
+
+{% block body_block %}
+
+    <!-- about me  -->
+
+    <h3 class="posts-top">আমার সম্পর্কে </h3> <hr>
+    <div class="about">
+        <div class="section">
+            <img src="{% static 'images/hasib.me.jpg' %}" alt="hasibul islam"> 
+        </div>
+        <div class="section">
+            <div class="about-details">
+                <div class="que-items">
+                    <h4 class="que">নামঃ </h4>
+                    <h4 class="ans">মোঃ হাসিবুল ইসলাম</h4> 
+                </div>
+                <div class="que-items">
+                    <h4 class="que">জেলাঃ</h4>
+                    <h4 class="ans">লক্ষ্মীপুর</h4>
+                </div>
+                <div class="que-items">
+                    <h4 class="que">জন্মদিনঃ</h4>
+                    <h4 class="ans">২৯ জুন</h4>
+                </div>
+                <div class="que-items">
+                    <h4 class="que">ব্লাড গ্রুপঃ </h4>
+                    <h4 class="ans">ও-পজেটিভ</h4>
+                </div>
+                <div class="que-items">
+                    <h4 class="que">প্রাথমিক বিদ্যালয়ঃ</h4>
+                    <h4 class="ans">লক্ষ্মীপুর পি,টি,আই, সংলগ্ন পরীক্ষণ বিদ্যালয়, লক্ষ্মীপুর। </h4>
+                </div>
+                <div class="que-items">
+                    <h4 class="que">মাধ্যমিক বিদ্যালয়ঃ</h4>
+                    <h4 class="ans">লক্ষ্মীপুর আদর্শ সামাদ সরকারি উচ্চ বিদ্যালয় </h4>
+                </div>
+                <div class="que-items">
+                    <h4 class="que">উচ্চ-মাধ্যমিক বিদ্যালয়ঃ</h4>
+                    <h4 class="ans">বীরশ্রেষ্ঠ মুন্সী আব্দুর রউফ পাবলিক কলেজ, পিলখানা, ঢাকা। </h4>
+                </div>
+                <div class="que-items">
+                    <h4 class="que">বিশ্ববিদ্যালয়ঃ </h4>
+                    <h4 class="ans">বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয় (বুয়েট), ঢাকা। </h4>
+                </div>
+                <div class="que-items">
+                    <h4 class="que">বিভাগঃ </h4>
+                    <h4 class="ans">যন্ত্রকৌশল (মেকানিক্যাল ইঞ্জিনিয়ারিং) </h4>
+                </div>
+                <div class="que-items">
+                    <h4 class="que">দক্ষতাঃ</h4>
+                    <h4 class="ans">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JAVASCRIPT</li>
+                            <li>PYTHON</li>
+                            <li>C PROGRAMMING</li>
+                            <li>EXPRESS JS</li>
+                            <li>MONGO DB</li>
+                            <li>REACT JS</li>
+                            <li>FIREBASE</li>
+                            <li>DJANGO</li>
+                            <li>WORDPRESS</li>
+                            <li>MATLAB</li>
+                            <li>ARDUINO </li>
+                            <li>AUTOCAD</li>
+                            <li>SOLIDWORKS</li>
+                            <li>CAMTASIA</li>
+                            <li>MICROSOFT WORD, EXCEL, POWERPOINT </li>
+                        </ul>
+                    </h4>
+                </div>
+
+                <div class="que-items">
+                    <h4 class="que">অর্জন/সার্টিফিকেশনঃ </h4>
+                    <h4 class="ans">
+                        <ul>
+                            <li>প্রেসিডেন্ট'স স্কাউট অ্যাওয়ার্ড (পিএস ২০১৫) </li>
+                            <li>উপজেলা শ্রেষ্ঠ স্কাউট (২০১৬) </li>
+                            <li>সৃজনশীল মেধা অন্বেষণ (উপজেলা চ্যাম্পিয়ন ২০১৪ ও ২০১৫) </li>
+                            <li>সৃজনশীল মেধা অন্বেষণ (জেলা চ্যাম্পিয়ন ২০১৪)</li>
+                            <li>CERTIFICATE FOR COMBINED 1ST IN COLLEGE RESULT (BMARPC, 2017)</li>
+                            <li>পাইথন উইথ জ্যাঙ্গো (ক্রিয়েটিভ আইটি, ২০১৯) </li>
+                            <li>ফুল স্ট্যাক ওয়েব ডেভেলপমেন্ট (২০২১) </li>
+                            <li>রেসপন্সিভ ওয়েবসাইট ডিজাইন (ফ্রি-কোডক্যাম্প, ২০২১) </li>
+                            <li>ম্যাটল্যাব অনর‍্যাম্প (২০২১) </li>
+                            <li>ASSISTANT SECRETARY, WEB PORTAL (বুয়েট সাংবাদিক সমিতি, ২০২১) </li>
+                            <li>টিভি নিউজ প্রেজেন্টেশন (বিজেম, ২০২২) </li>
+                            <li>জুডো ও কারাতে (হলুদ বেল্ট, ২০২২) </li>
+                            <li>আরবি ভাষা (আভাই, ঢাবি, ২০২২) </li>
+                        </ul>
+                    </h4>
+                </div>
+
+                <div class="que-items">
+                    <h4 class="que">আগ্রহ/শখঃ </h4>
+                    <h4 class="ans">
+                        <ul>
+                            <li>ভ্রমণ </li>
+                            <li> ওয়েব ডেভেলপমেন্ট </li>
+                            <li> প্রোগ্রামিং </li>
+                            <li>কোয়ান্টাম মেকানিক্স </li>
+                            <li>ক্রিপ্টোগ্রাফি, কোড এন্ড সাইফার, এনক্রিপশন </li>
+                            <li>টাইম ট্রাভেল, টাইম ডায়ালেশন, টুইন প্যারাডক্স </li>
+                            <li>সাইকোলজি এবং পারসোনালিটি ভ্যারিয়েশন </li>
+                            <li>মেশিন লার্নিং এবং আর্টিফিসিয়াল ইন্টেলিজেন্স </li> 
+                            <li>ইসলামি ইতিহাস এবং ঐতিহ্য </li>
+                        </ul>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- my words  -->
+    <!-- <h3 class="posts-top">আমার কথা</h3> <hr> -->
+
+
+
+    <h3 class="posts-top">সাম্প্রতিক পোস্ট</h3> <hr>
+    <div class="all-posts">
+    {% for post in posts %}
+    <div class="single-post">
+        <h1 class="post-title">{{post.title}}</h1> <hr>
+        <div class="post-details">
+        <h4>পোস্ট নংঃ {{post.id}}</h4>
+        <h4>{{post.category}}</h4>
+        <h4>{{post.date}}</h4>
+        </div>
+        <div class="banner">
+        <img src="{{post.img1}}" alt="" />
+        </div> <br>
+        <div class="para1">
+            <p class="texts">
+               &nbsp;&nbsp; &nbsp;&nbsp;
+               &nbsp;
+               &nbsp;
+               &nbsp;
+               &nbsp;{{ post.para1 }} 
+            </p>
+        </div> 
+        <div class="read-more-button">
+            <button class="read-more">
+                <a href="/post/{{post.id}}" class="read">আরো পড়ুন >> </a>
+            </button>
+        </div>
+    </div>
+    
+
+{% endfor %}
+
+    </div>
+    <hr> <br>
+<div class="bottom-posts">
+    <button class="see-all-posts">
+        <a href="{% url 'posts'  %}" class="read1">সকল পোস্ট দেখুন </a>
+    </button>
+</div>
+
+{% endblock body_block %}

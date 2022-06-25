@@ -1,0 +1,46 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{% block title %} - Religious {% endblock %} 
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/homepage.css' %}" />
+{% endblock %} 
+
+{% block body_block %}
+
+    <h3 class="posts-top">ধর্মীয় পোস্টসমূহ </h3> <hr> 
+    <div class="all-posts">
+    {% for post in posts %}
+    <div class="single-post">
+        <h1 class="post-title">{{post.title}}</h1> <hr>
+        <div class="post-details">
+        <h4>পোস্ট নংঃ {{post.id}}</h4>
+        <h4>{{post.category}}</h4>
+        <h4>{{post.date}}</h4>
+        </div>
+        <div class="banner">
+        <img src="../{{STATIC_URL}}{{post.img1}}" alt="" />
+        </div> <br>
+        <div class="para1">
+            <p class="texts">
+               &nbsp;&nbsp; &nbsp;&nbsp;
+               &nbsp;
+               &nbsp;
+               &nbsp;
+               &nbsp;{{ post.para1 }} 
+            </p>
+        </div> 
+        <div class="read-more-button">
+            <button class="read-more">
+                <a href="/post/{{post.id}}" class="read">আরো পড়ুন >> </a>
+            </button>
+        </div>
+    </div>
+    
+
+{% endfor %}
+
+    </div>
+
+{% endblock body_block %}

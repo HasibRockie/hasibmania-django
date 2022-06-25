@@ -1,0 +1,48 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{% block title %} - Gratitude {% endblock %} 
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/gratitude.css' %}" />
+{% endblock %} 
+
+{% block body_block %}
+
+    <h3 class="gratitude-top">কৃতজ্ঞতা  </h3> <hr> 
+    <div class="all-gratitude">
+    {% for message in dedicated %}
+    <div class="gratitude">
+        
+        <div class="section-grat">
+          
+          <div class="item-grat">
+            <div class="p-top">
+              <div class="p-left">
+                <h4 class="p-name"> <span class="dedication-num">
+                    {{message.num}}
+                </span> {{message.name}}</h4>
+                <h6 class="p-relation">{{message.relation}} </h6>
+              </div>
+              <div class="p-right">
+                <img src="../{{STATIC_URL}}{{message.img}}" alt="hasib" />
+              </div>
+            </div>
+            <hr />
+            <p class="p-details">
+              {{message.dedicated}}
+            </p>
+          </div>
+  
+          
+  
+          
+        </div>
+      </div>
+    
+
+{% endfor %}
+
+    </div>
+
+{% endblock body_block %}

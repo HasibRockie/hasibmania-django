@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="HasibMania is a personal blog website created by Hasibul islam, which contains personal, educational, fictional or religious stories."
+    />
+    <base href="/"> 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    
+    {% block styles %} {% endblock %}
+    
+    <title>HasibMania {% block title %} {% endblock %}</title>
+  </head>
+  <body>
+    <nav class="navbar header navbar-expand-lg bg-dark text-light">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="{% url 'index' %}" >
+            <img src="{% static 'images/logo.png' %}" height="110px" alt="logo">
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon navbar-dark"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link top-links text-light active" aria-current="page" href="{% url 'index' %}">হোম </a>
+            </li> <hr>
+            <li class="nav-item">
+              <a class="nav-link top-links text-light" href="{% url 'posts' %}" >সকল পোস্ট </a>
+            </li> <hr>
+            <li class="nav-item">
+              <a class="nav-link top-links text-light" href="{% url 'personals' %}" >ব্যক্তিগত-ব্লগ</a>
+            </li><hr>
+            <li class="nav-item ">
+              <a class="nav-link top-links text-light" href="{% url 'fictions' %}" >ফিকশন</a>
+            </li><hr>
+            <li class="nav-item ">
+              <a class="nav-link top-links text-light" href="{% url 'religious' %}" >ধর্মীয়-ব্লগ</a>
+            </li><hr>
+            <li class="nav-item ">
+              <a class="nav-link top-links text-light" href="{% url 'gratitude' %}">কৃতজ্ঞতা</a>
+            </li><hr>
+          </ul>
+          <span class="navbar-text theme "> Personal Blog Website of Hasibul islam </span>
+        </div>
+      </div>
+    </nav>
+
+    {% block body_block %} {% endblock body_block %}
+
+
+
+    <!-- footer  -->
+
+    <div class="bottom">
+        <div class="footer">
+          <div class="segment">
+            <h3>ডেভেলপার:-</h3>
+            <div class="infos">
+              <img class="image" src="{% static 'images/hasib.jpeg' %}"  height="200px" alt="hasib" /> <br />
+              <br />
+              <div class="info">
+                <p>মোঃ হাসিবুল ইসলাম </p>
+                <p>যন্ত্রকৌশল'১৮, বুয়েট </p>
+                <p>লাহার কান্দি, সদর, লক্ষ্মীপুর-৩৭০০, বাংলাদেশ </p>
+                <p>mdhasibul@ug.me.buet.ac.bd</p>
+                <p>hasibrockie@yahoo.com</p>
+                <p>
+                  <a href="https://www.facebook.com/Hasib.Rockie">
+                    Hasibul Islam
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="segment">
+            <h5 class="pages-footer">পেজসমূহ</h5>
+            <div class="footer-links">
+              <ul>
+                <a href="{% url 'index' %}" > হোম </a>
+              </ul>
+              <ul>
+                <a href="{% url 'posts' %}" >সকল পোস্ট</a> 
+              </ul>             
+              <ul>
+                <a href="{% url 'personals' %}" > ব্যক্তিগত-ব্লগ</a>
+              </ul>
+              <ul>
+                <a href="{% url 'religious' %}" > ধর্মীয়-ব্লগ </a>
+              </ul>
+              <ul>
+                <a href="{% url 'fictions' %}" >ফিকশন</a> 
+              </ul>
+              <ul>
+                <a href="{% url 'gratitude' %}"> কৃতজ্ঞতা </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          স্বত্ব © ২০২২ । <span>HasibMania</span>
+        </div>
+      </div>
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://kit.fontawesome.com/9e9140c010.js" crossorigin="anonymous"></script>
+  </body>
+</html>
