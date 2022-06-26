@@ -1,6 +1,7 @@
 .gratitude{
     font-family: 'Baloo Da 2', cursive;
     box-sizing: border-box;
+    width: 100%;
 }
 
 .all-gratitude{
@@ -17,6 +18,7 @@
 .section-grat{
     padding-top: 100px;
     padding-bottom: 30px;
+    padding-right: 0;
     width: 95%;
 }
 
@@ -53,7 +55,7 @@
 .p-top{
     display: grid;
     grid-template-columns: 3fr 2fr;
-    margin-bottom: -100px;
+    margin-bottom: -40px;
 }
 
 .p-left{
@@ -92,8 +94,13 @@
 
 @media only screen and (max-width: 1100px){
 
+    .gratitude{
+        width: 100%;
+        box-sizing: border-box;
+    }
     .section-grat{
         padding-top: 10px;
+        width: 100vw;
     }
 
     .all-gratitude{
@@ -127,7 +134,7 @@
     .p-top{
         display: grid;
         grid-template-columns: 5fr 2fr;
-        margin-bottom: -60px;
+        margin-bottom: 20px;
     }
 
     .p-left{
@@ -139,10 +146,12 @@
         position: relative;
         left: 0%;
         top: -70px;
+        height: 120px;
+        width: 120px;
     }
 
     .p-right img{
-        height: 160px;
+        height: 120px;
         border-radius: 50%;
         border: 1px solid gray;
     }

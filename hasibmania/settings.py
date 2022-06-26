@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os 
 from pathlib import Path
+import django_heroku 
+import dj_database_url
 
 import mimetypes
 mimetypes.add_type("text/css", ".css", True)
@@ -127,6 +129,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR,"staticfiles")
 
 STATICFILES_DIRS = [
     STATIC_DIR,
@@ -136,3 +139,5 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+django_heroku.settings(locals())
