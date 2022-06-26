@@ -4,12 +4,12 @@
 {% block title %} - {{post.title}} {% endblock %}  
 
 {% block styles %}
-    <link href="{% static 'css/viewpost.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/viewpost.css' %}" />
 {% endblock %} 
 
 {% block body_block %}
 
-<div class="post-container">
+<div class="post-container post-wrapper">
     <h3 class="post-headline">
       {{post.title}}
     </h3>

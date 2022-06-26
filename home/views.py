@@ -33,15 +33,15 @@ def gratitude(request):
     return render(request, 'home/gratitude.html', context=grat_dict)
 
 def post(request,id):
-    post = Post.objects.get(id=id)
-    # print(post)
-    # print(Post.objects.all())
-    print(len(Post.objects.all()))
-    context = {'post': post}
-    # if id > len(Post.objects.all()):
-    return render(request, 'home/viewpost.html', context)
-    # else:
-        # return render(request,'home/not-found.html',context)
+   
+    try:
+        post = Post.objects.get(id=id)
+        context = {'post': post}
+
+        return render(request, 'home/viewpost.html', context)
+    except Post.DoesNotExist:
+        return render(request, 'home/not-found.html')
+
 
 def errorhandler(request,exception):
     return render(request, 'home/not-found.html')

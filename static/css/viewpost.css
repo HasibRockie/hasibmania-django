@@ -5,6 +5,11 @@
     font-family: "Baloo Da 2", cursive;
 }
 
+.post-wrapper{
+    margin: 20px 30px;
+    border: 1px solid gray;
+}
+
 .post-container img{
     border: 2px solid gray;
     margin-bottom: 20px;
@@ -45,7 +50,7 @@
 
 @media only screen and (max-width: 900px){
     .post-container{
-        padding: 40px 10px;
+        padding: 40px 20px;
     }
 
     .post-body{
@@ -74,5 +79,9 @@
         flex-wrap: wrap;
     }
 
+    .post-wrapper{
+        margin: 20px 15px;
+
+    }
  
 }
